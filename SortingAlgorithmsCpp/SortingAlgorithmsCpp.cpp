@@ -13,6 +13,9 @@
 #include "InsertionSort.h"
 #include "SharedFunctions.h"
 #include "MergeSort.h"
+#include "QuickSort.h"
+#include "HeapSort.h"
+#include "RadixSort.h"
 
 using namespace std;
 
@@ -29,7 +32,7 @@ int main() {
     sf::SoundBuffer swapBuffer = createSwapSound();
     sf::Sound swapSound;
     swapSound.setBuffer(swapBuffer);
-
+    
     bubbleSorts(bars, window, swapSound);
 
     for (int& bar : bars) {
@@ -48,7 +51,23 @@ int main() {
         bar = rand() % (windowHeight - 10) + 10;
     }
 
-    mergeSort(bars, window, swapSound);
+   mergeSort(bars, window, swapSound);
+
+    for (int& bar : bars) {
+        bar = rand() % (windowHeight - 10) + 10;
+    }
+
+    quickSort(bars, 0, bars.size() - 1, window, swapSound, true);
+    for (int& bar : bars) {
+        bar = rand() % (windowHeight - 10) + 10;
+    }
+
+    heapSort(bars, window, swapSound);
+    for (int& bar : bars) {
+        bar = rand() % (windowHeight - 10) + 10;
+    }
+
+    radixSort(bars, window, swapSound);
 
     sf::Event event;
     while (window.isOpen()) {

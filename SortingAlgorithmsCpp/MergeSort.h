@@ -8,4 +8,6 @@
 
 using std::vector;
 void mergeSort(vector<int>& arr, sf::RenderWindow& window, sf::Sound& swapSound);
+void mergeSortHelper(vector<int>& arr, int left, int right, sf::RenderWindow& window, sf::Sound& swapSound);
+void merge(vector<int>& arr, int left, int middle, int right, sf::RenderWindow& window, sf::Sound& swapSound);
 #endif

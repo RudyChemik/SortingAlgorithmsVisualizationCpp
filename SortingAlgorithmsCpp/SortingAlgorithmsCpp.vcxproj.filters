@@ -38,6 +38,15 @@
     <ClCompile Include="MergeSort.cpp">
       <Filter>Source Files\Algos</Filter>
     </ClCompile>
+    <ClCompile Include="QuickSort.cpp">
+      <Filter>Source Files\Algos</Filter>
+    </ClCompile>
+    <ClCompile Include="HeapSort.cpp">
+      <Filter>Source Files\Algos</Filter>
+    </ClCompile>
+    <ClCompile Include="RadixSort.cpp">
+      <Filter>Source Files\Algos</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SharedFunctions.h">
@@ -53,6 +62,15 @@
       <Filter>Source Files\Heads</Filter>
     </ClInclude>
     <ClInclude Include="MergeSort.h">
+      <Filter>Source Files\Heads</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickSort.h">
+      <Filter>Source Files\Heads</Filter>
+    </ClInclude>
+    <ClInclude Include="HeapSort.h">
+      <Filter>Source Files\Heads</Filter>
+    </ClInclude>
+    <ClInclude Include="RadixSort.h">
       <Filter>Source Files\Heads</Filter>
     </ClInclude>
   </ItemGroup>
